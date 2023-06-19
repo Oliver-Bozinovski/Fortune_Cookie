@@ -62,7 +62,6 @@ const generateText = () => {
 	previousImage?.remove();
 	document.body.appendChild(text);
 	document.body.appendChild(image);
-	enlargeImage();
 };
 
 const clickMe = document.getElementById("click-me");
