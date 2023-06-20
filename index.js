@@ -1,5 +1,4 @@
-// create a function that generates a random chinese fortune cookie message
-
+//function that generates a random fortune cookie message
 const generateFortuneCookie = () => {
 	// create an array of strings
 	const fortunes = [
@@ -24,14 +23,11 @@ const generateFortuneCookie = () => {
 		"Mouth may be loud, but voice is small.",
 		"Only listen to the fortune cookie; disregard all other fortune telling units.",
 	];
-	// generate a random number
 	const randomIndex = Math.floor(Math.random() * fortunes.length);
-	// get a random element from the array of strings
 	const randomFortune = fortunes[randomIndex];
-	// return the random element
 	return randomFortune;
 };
-
+//function that generates random cat photos
 const randomChineseLuckyCatPhotos = () => {
 	const photos = [
 		"https://images.unsplash.com/photo-1671230816334-04ca31b3294c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=8",
@@ -48,6 +44,7 @@ const randomChineseLuckyCatPhotos = () => {
 	return randomPhoto;
 };
 
+//funtion that generates fortune cookie text and photo
 const generateText = () => {
 	const text = document.createElement("h2");
 	// creaate an image element with class name "lucky-cat"
@@ -64,5 +61,6 @@ const generateText = () => {
 	document.body.appendChild(image);
 };
 
+//Click Me! button event listener
 const clickMe = document.getElementById("click-me");
 clickMe?.addEventListener("click", generateText);
